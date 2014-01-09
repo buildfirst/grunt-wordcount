@@ -20,7 +20,7 @@ module.exports = function (grunt) {
     if (options.threshold) {
       if (running > options.threshold) {
         grunt.log.error('Threshold of', options.threshold, 'exceeded. Found', running, 'words.');
-      grunt.fail.warn('ETOOMANYWORDS');
+        grunt.fail.warn('ETOOMANYWORDS');
       } else {
         grunt.log.ok(running, 'words found in total.');
       }
